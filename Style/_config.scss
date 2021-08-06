@@ -1,0 +1,51 @@
+// Font 1
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Font 2
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    // border: 1px solid rgb(255, 0, 0);
+    // font-family: 'Kanit', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 1330px) {
+
+    .notresponsive{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #293F6B;
+        color: #afc2e9;
+        font-size: 4rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+
+
+        .Note{
+            display: block;
+        }
+    }
+
+
+
+
+}
+
+

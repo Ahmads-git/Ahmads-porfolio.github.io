@@ -1,0 +1,199 @@
+@import './config';
+
+
+.header{
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    color: #293F6B;
+}
+
+
+.header_nav{
+    box-shadow: 0px 2px 5px 3px #2859B823;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ffffffce;
+}
+
+.nav{
+    height: inherit;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.logo_{
+    font-size: 1.6rem;
+}
+
+.purple_{
+    position: relative;
+    color: #2859B8;
+}
+
+.purple_::after{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #2859B8;
+}
+
+.Note{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.menu_items{
+    list-style: none;
+}
+
+.menu_links{
+    text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+    color: #293F6B;
+}
+
+.menu_links::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #2859B8;
+    transition: width .35s;
+}
+
+.menu_links:hover::after{
+    width: 100%;
+}
+
+.heroSection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 220px);
+    width: 70%;
+    margin: auto;
+}
+
+.discription{
+    width: 700px;
+    min-width: 600px;
+    color: #293F6B;
+}
+
+.contactSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+
+}
+
+.contact_button{
+    display: inline-flex;
+    padding: 9px 18px;
+    margin-top: 25px;
+    color: white;
+    background-color: #2859B8;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.35s;
+    text-decoration: none;
+}
+
+.contact_button:hover{
+    box-shadow: 3px 4px 8px 5px #2858b831;
+    transform: translateY(-5px);
+}
+
+.socialLinks{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: 25px;
+}
+
+.icon{
+    color: #2859B8;
+    transition: all .35s;
+}
+.icon:hover{
+    transform: translateY(-3px);
+    color: #2858b8b0;
+}
+
+
+.icon3{
+    margin-left: 13px;
+}
+
+.icon4{
+    margin-left: 13px;
+}
+
+.image img{
+    height: 360px;
+}
+
+.intro{
+    font-size: 2rem;
+}
+
+.purple{
+    color: #2859B8;
+    position: relative;
+    font-size: 2.3rem;
+}
+
+.purple::after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #2859B8;
+}
+
+.header_image img{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+
+
+@import './mainSection';
+@import './project';
+@import './contactSection';
+@import './footer';

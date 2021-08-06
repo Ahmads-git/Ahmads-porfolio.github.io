@@ -1,0 +1,140 @@
+
+
+#contactSection{
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    background-color: #7BA0EC;
+    color: #293F6B;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+.contact_Heading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4rem;
+    font-weight: bolder;
+    z-index: 1;
+    font-family: 'Kanit', sans-serif;
+}
+
+.contact_Heading::after{
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-color: #afc2e9;
+    z-index: -1;
+}
+
+.form{
+    height: 600px;
+    width: 40%;
+    display: flex;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+}
+
+input{
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #afc2e9;
+    color: #293F6B;
+    outline: none;
+    border: none;
+    transition: all .35s;
+}
+input:focus{
+    box-shadow: 2px 2px 4px 4px #293f6b18;
+    border-bottom: 4px solid #293F6B;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+textarea{
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #afc2e9;
+    color: #293F6B;
+    outline: none;
+    border: none;
+}
+
+textarea:focus{
+    box-shadow: 2px 2px 4px 4px #293f6b11;
+    border-bottom: 4px solid #293F6B;
+}
+
+label{
+    margin-bottom: 3px;
+    font-weight: bolder;
+}
+.loc{
+    position: absolute;
+    top: 0;
+    right: 33%;
+    font-size: 4rem;
+    font-weight: bolder;
+    z-index: 1;
+    font-family: 'Kanit', sans-serif;
+}
+
+.loc::after{
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-color: #afc2e9;
+    z-index: -1;
+}
+
+.map{
+    width: 47%;
+    box-shadow: 20px 20px 40px 20px #293f6b2f;
+
+}
+
+.form_button{
+    padding: 8px;
+    font-weight: bolder;
+    background-color: #afc2e9;
+    border: 2px solid #293F6B;
+    border-radius: 5px;
+    margin-top: 6px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.form_button:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 4px 4px #293f6b11;
+}
